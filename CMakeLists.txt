@@ -16,6 +16,9 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 # Include directories
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
+# Set the directory where UIC should look for .ui files
+set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_SOURCE_DIR}/ui)
+
 # Source files
 set(SOURCES
     src/main.cpp

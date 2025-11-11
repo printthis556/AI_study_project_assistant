@@ -19,7 +19,9 @@ sudo apt-get install -y \
     build-essential \
     mesa-common-dev \
     libglu1-mesa-dev \
-    libxkbcommon-x11-0
+    libxkbcommon-x11-0 \
+    designer \
+    qtcreator
 
 # Install additional Qt modules that might be useful
 sudo apt-get install -y \
@@ -30,3 +32,9 @@ sudo apt-get install -y \
 echo "Qt6 installation completed!"
 echo "Qt version:"
 qmake6 --version
+echo ""
+echo "Available Qt tools:"
+echo "  - qmake6: Qt build system"
+echo "  - designer: Qt Designer (UI editor)"
+echo "  - qtcreator: Qt Creator IDE"
+
